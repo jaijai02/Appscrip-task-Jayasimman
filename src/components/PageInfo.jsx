@@ -9,7 +9,7 @@ function PageInfo() {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere
           optio similique, illum tempora illo perspiciatis quis earum quod
-          numquam alias aut velit repudiandae libero quidem possimus sed totam
+          numquam alias aut velit repudiandae 
         </p>
        </div>
       </section>
