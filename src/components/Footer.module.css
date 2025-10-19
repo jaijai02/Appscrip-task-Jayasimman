@@ -101,7 +101,7 @@
   border: 1px solid white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .footer,
   .signupinfo {
     margin-top: 5px;
