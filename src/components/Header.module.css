@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+.logo {
+  font-size: 40px;
+  position: relative;
+  left: 40px;
+}
+.brandname {
+  font-weight: bolder;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.headlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 20px;
+}
+.headlist li{
+  cursor: pointer;
+}
+.headsections {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  right: 40px;
+}
+.language {
+  border: none;
+  width: 50px;
+}

@@ -1,0 +1,22 @@
+.Pageinfo {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Pageinfodiv {
+  height: 100%;
+  width: 60%;
+}
+.Pageinfodiv h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.Pageinfodiv p{
+    /* margin-top: 20px; */
+    padding: 30px;
+}

@@ -1,0 +1,19 @@
+.nav{
+    height: 50px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-weight: bold;
+}
+
+.navlist li{
+    cursor: pointer;
+}
