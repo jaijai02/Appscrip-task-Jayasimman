@@ -25,7 +25,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <hr className={Styles.line}/>
+          <hr className={Styles.line} />
 
           <div className={Styles.footercontent2}>
             <h5 style={{ fontWeight: "bolder", fontSize: "20px" }}>
@@ -35,7 +35,7 @@ function Footer() {
               <p>+44 221 133 5360</p>
               <p>customercare@mettamuse.com</p>
             </div>
-          <hr className={Styles.line}/>
+            <hr className={Styles.line} />
 
             <h5
               style={{
@@ -46,18 +46,23 @@ function Footer() {
             >
               CURRENCY
             </h5>
-            <div style={{ marginTop: "10px" }}>+ USD</div>
+            <div style={{ marginTop: "10px",display:'flex',flexDirection:'row',justifyContent:'start',alignItems:'center',gap:'10px' }}>
+              <img
+                src={"/images/payments/USA-flag.jpg"}
+                alt="USa Flag"
+                style={{ height: "40px", width: "40px", borderRadius: "50%" }}
+              />
+              + USD
+            </div>
             <p className={Styles.transactionInfo}>
               Transaction will be completed in Euros and a currency reference is
               available on hover.
             </p>
-          <hr className={Styles.line}/>
+            <hr className={Styles.line} />
           </div>
-
         </div>
 
-        <hr  className={Styles.desktopline}/>
-
+        <hr className={Styles.desktopline} />
 
         <div className={Styles.mobileFooter}>
           <select>
@@ -69,8 +74,7 @@ function Footer() {
             <option>Contact Us</option>
             <option>EU Compliances Docs</option>
           </select>
-          <hr className={Styles.line}/>
-
+          <hr className={Styles.line} />
 
           <select>
             <option>QUICK LINKS</option>
@@ -82,20 +86,18 @@ function Footer() {
             <option>Privacy Policy</option>
             <option>Terms & Conditions</option>
           </select>
-          <hr className={Styles.line}/>
-
+          <hr className={Styles.line} />
 
           <select>
             <option>FOLLOW US</option>
             <option>Linked In</option>
             <option>Instagram</option>
           </select>
-          <hr className={Styles.line}/>
-
+          <hr className={Styles.line} />
         </div>
 
         <div className={Styles.footercontent3}>
-          <div style={{ width: "25%" }}>
+          <div className={Styles.footercontent4}>
             <h5>metta muse</h5>
             <ul>
               <li>About Us</li>
@@ -107,7 +109,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div style={{ width: "25%" }}>
+          <div className={Styles.footercontent5}>
             <h5>QUICK LINKS</h5>
             <ul>
               <li>Orders & Shipping</li>
@@ -120,23 +122,32 @@ function Footer() {
             </ul>
           </div>
 
-          <div style={{ width: "50%", position: "relative", left: "40px" }}>
-            <div>
+          <div className={Styles.footercontent6}>
+            <div className={Styles.follow_us}>
               <h5>FOLLOW US</h5>
-              <div style={{ marginTop: "20px", gap: "10px" }}>
+              <div
+                style={{
+                  marginTop: "20px",
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "10px",
+                  fontSize: "30px",
+                }}
+              >
                 <i className="bi bi-instagram"></i>
                 <i className="bi bi-linkedin"></i>
               </div>
             </div>
 
-            <div style={{ marginTop: "30px" }}>
+            <div className={Styles.payments}>
               <h5>metta muse ACCEPTS</h5>
               <div className={Styles.accptedpayments}>
-                {/* <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" /> */}
+                <img src={"/images/payments/google-pay-logo.jpg"} alt="gpay logo" />
+                <img src={"/images/payments/mastercard-logo.jpg"} alt="mastercard logo" />
+                <img src={"/images/payments/paypal-logo.jpg"} alt="paypal logo" />
+                <img src={"/images/payments/american-express-logo.jpg"} alt="amex logo" />
+                <img src={"/images/payments/paytm-logo.jpg"} alt="paytm logo" />
+                <img src={"/images/payments/applepay-logo.jpg"} alt="applepay logo" />
               </div>
             </div>
           </div>
