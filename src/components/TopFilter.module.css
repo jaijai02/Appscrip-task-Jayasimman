@@ -1,0 +1,68 @@
+.topfilter {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.topleftfilter {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 300px;
+  align-items: center;
+  padding: 20px;
+}
+
+.topleftfilter p {
+  cursor: pointer;
+}
+
+.toprightfilter select {
+  min-width: 200px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .topfilter {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .topleftfilter {
+    width: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .topleftfilter p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .toprightfilter{
+     display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: auto;
+  }
+
+
+  .toprightfilter select {
+  min-width: 120px;
+  height: 35px;
+
+  }
+  .topleftfilter h3 {
+    display: none;
+  }
+}

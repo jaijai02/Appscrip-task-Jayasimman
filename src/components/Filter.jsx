@@ -17,12 +17,8 @@ function Filter() {
   ];
 
   return (
-    <div
-      style={{
-        width: "300px",
-        border: "1px solid #ddd",
-        marginTop:'20px'
-      }}
+    <div className={Styles.filter}
+      
     >
       {filters.map((filter, index) => (
         <div
@@ -48,7 +44,6 @@ function Filter() {
             ></i>
           </div>
 
-          {/* Show options if open */}
           {open === index && (
             <div style={{ marginTop: "8px", marginLeft: "10px" }}>
               {filter.options.map((opt) => (

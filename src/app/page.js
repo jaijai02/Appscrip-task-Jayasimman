@@ -6,11 +6,13 @@ import TopFilter from "@/components/TopFilter";
 import { useState } from "react";
 
 export default function Home() {
+
   const [showFilter,setShowFilter]=useState(false)
+  
   return (
    <>
     <PageInfo/>
-    <TopFilter showFilter={showFilter} setShowFilter={setShowFilter}/>
+    <TopFilter showFilter={showFilter} setShowFilter={setShowFilter} />
 
     <div style={{display:'flex'}}>
       {showFilter && <div style={{width:'350px'}}><Filter/></div>}

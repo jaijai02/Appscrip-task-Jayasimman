@@ -17,3 +17,9 @@
 .navlist li{
     cursor: pointer;
 }
+
+@media (max-width:768px){
+    .navlist {
+        padding: 30px;
+    }
+}

@@ -10,6 +10,9 @@
   font-size: 40px;
   position: relative;
   left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .brandname {
   font-weight: bolder;
@@ -24,6 +27,8 @@
   flex-direction: row;
   gap: 20px;
   font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 .headlist li{
   cursor: pointer;
@@ -33,8 +38,54 @@
   gap: 15px;
   position: relative;
   right: 40px;
+  align-items: center;
 }
 .language {
   border: none;
   width: 50px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  /* Left: hamburger + logo */
+  .logo {
+    left: 0;
+    font-size: 30px;
+  }
+
+  .menu-icon {
+    display: block; /* show hamburger icon */
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  /* Center: brand name */
+  .brandname {
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Right: icons */
+  .headsections {
+    right: 0;
+    gap: 12px;
+  }
+
+  .headlist {
+    gap: 20px;
+    font-size: 18px;
+  }
+   .headlist li:last-child {
+    display: none;
+  }
+
+  .language {
+    display: none;
+  }
 }

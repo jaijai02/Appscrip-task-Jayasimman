@@ -1,0 +1,11 @@
+.filter{
+    width: 300px;
+    border: 1px solid black;
+    margin-top: 20px;
+
+}
+@media (max-width:768px){
+    .filter{
+        width: 200px;
+    }
+}
